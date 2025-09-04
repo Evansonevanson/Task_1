@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body{
+    overscroll-behavior: none;
+}
+
+h3 {
+    color: hsl(0, 0%, 100%);
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-bottom: 0.8rem;
+    }
+
+.main_container{
+    width: 100vw;
+    min-height: 100vh;
+    background-color: hsl(225, 73%, 4%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.container{
+    width: 75%;
+    height: auto;
+    overflow: hidden;
+    background-color: hsl(223, 43%, 11%);
+    border-radius: 1rem;
+    border: 0.5px solid hsl(0, 0%, 40%);
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+}
+
+.main{
+    background-color: hsl(223, 43%, 11%);
+}
+
+.drawer{
+    background-color: hsl(216, 31%, 17%);
+    border-left: 0.5px solid hsl(0, 0%, 40%);
+    padding: 0 0 2rem 0;
+}
+
+.heading_container{
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+    background-color: hsl(246, 73%, 44%);
+}
+
+.head{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.head h1{
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+}
+
+.fa-xmark{
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.paragraph{
+    color: hsl(0, 0%, 75%);
+    font-size: 0.81rem;
+    font-weight: 400;
+    line-height: 1.2rem;
+}
+
+
+/* __________________________________________Form section _____________________________________*/
+
+.form_container{
+    width: 100%;
+    height: auto;
+    padding: 0 2rem;
+    margin-top: 2rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form_group{
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+}
+.form_group label{
+    color: hsl(0, 0%, 100%);
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+.form_group input{
+    padding: 0.8rem 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    font-size: 0.8rem;
+    font-weight: 400;
+    background-color: hsl(215, 21%, 22%);
+    border: 0.5px solid hsl(0, 0%, 40%);
+    caret-color: hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 100%);
+}
+.form_group input:focus{
+    border: 0.5px solid hsl(246, 73%, 44%);
+}
+
+textarea{
+    padding: 0.8rem 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    font-size: 0.8rem;
+    font-weight: 400;
+    resize: none;
+    height: 100px;
+    background-color: hsl(215, 21%, 22%);
+    border: 0.5px solid hsl(0, 0%, 40%);
+    caret-color: hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 100%);
+}
+.form_group textarea:focus{
+    border: 0.5px solid hsl(246, 73%, 44%);
+}
+
+/* __________________________________________Form section ends _____________________________________*/
+
+
+
+/* _____________________________________Team Members Section ______________________________*/
+
+
+.team_container{
+    width: 100%;
+    height: auto;
+    margin-top: 2rem;
+}
+
+
+.team_members{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.member1{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-image: url('./images/avatar1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.member2{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-image: url('./images/avatar2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.member3{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-image: url('./images/avatar3.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.member4{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-image: url('./images/avatar4.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.member5{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background-image: url('./images/avatar5.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.add_member{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    border: 1px dashed hsl(0, 0%, 40%);
+    border-width: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.add_member i{
+    color: white;
+    font-size: 1rem;
+}
+
+
+/* _____________________________________Team Members Section Ends ______________________________*/
+
+
+/* _______________________________ Privacy Section _________________________________ */
+
+
+
+.privacy-container {
+    width: 100%;
+    height: auto;
+    margin-top: 2rem;
+    border-bottom: 1px solid hsl(0, 0%, 40%);
+    padding: 0 0 1rem 0;
+    }
+
+.option {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 14px;
+    cursor: pointer;
+}
+
+.option input[type="radio"] {
+    appearance: none;
+    background-color: hsl(215, 28%, 17%);
+    border: 2px solid hsl(215, 14%, 34%);
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    margin-top: 3px;
+    cursor: pointer;
+    position: relative;
+}
+
+.option input[type="radio"]:checked {
+    background-color: hsl(217, 91%, 60%);
+    border-color: hsl(217, 91%, 60%);;
+}
+
+.option input[type="radio"]:checked::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 6px;
+    height: 6px;
+    background: hsl(0, 0%, 100%);
+    border-radius: 50%;
+    }
+
+    .option label {
+      cursor: pointer;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      color: hsl(0, 0%, 100%);
+    }
+
+    .option label span {
+      display: block;
+      font-size: 12px;
+      color: #9ca3af;
+    }
+
+
+
+
+/* _______________________________ Privacy Section Ends _________________________________ */
+
+
+/* _____________________________ Link Container _____________________________ */
+
+.link_container{
+    width: fit-content;
+    height: auto;
+    margin-top: 2rem;
+    
+}
+
+.link{
+    display: flex;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+.link h3,
+.link i{
+    color: hsl(246, 65%, 53%);
+}
+.link:hover h3,
+.link:hover i{
+    transition: color 0.5s ease-in-out;
+    color: hsl(246, 100%, 67%);
+}
+
+
+.learn_more{
+    display: flex;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.learn_more .icon{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: hsl(215, 14%, 34%);
+}
+
+.learn_more h3{
+   color: hsl(0, 0%, 75%);
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon i{
+    font-size: 0.6rem;
+}
+
+.learn_more:hover h3 {
+    transition: color 0.3s ease;
+    color: hsl(0, 0%, 100%);
+}
+.learn_more:hover .icon{
+    transition: color 1s ease-in-out;
+    background-color: hsl(0, 0%, 100%);
+}
+/* _____________________________ Link Container Ends _____________________________ */
