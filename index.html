@@ -8,12 +8,12 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="main_container">
+    <div class="main_container">    
         <div class="container">
             <div class="main"></div>
             <div class="drawer">
 
-            <div class="heading_container">
+                <div class="heading_container">
                     <div class="head">
                         <h1>New project</h1>
                         <i class="fa-solid fa-xmark"></i>
@@ -21,9 +21,11 @@
 
                     <div class="paragraph">Get started by filling in the information below to create your new project.</div>
                     
-            </div>
+                </div>
 
-            <div class="form_container">
+                <div class="inner_container">
+
+                    <div class="form_container">
                     <form action="#">
                         <div class="form_group">
                             <label for="project_name">Project Name</label>
@@ -33,11 +35,11 @@
                         <div class="form_group">
                             <label for="project_description">Project Description</label>
                             <textarea id="project_description" rows="4" ></textarea>
-                        
+                        </div>
                     </form>
-            </div>
+                    </div>
 
-            <div class="team_container">
+                    <div class="team_container">
                     <div class="team_heading"><h3>Team Members</h3></div>
                     <div class="team_members">
                         <div class="member1"></div>
@@ -49,37 +51,38 @@
                             <i class="fa-solid fa-plus"></i>
                         </div>
                 </div>
-            </div>
+                    </div>
 
-            <div class="privacy-container">
-                <h3>Privacy</h3>
-
-                <div class="option">
+                    <div class="privacy-container">
+                        <h3>Privacy</h3>
+                        <div class="options">    
+                            <div class="option">
                 <input type="radio" id="public" name="privacy" checked>
                 <label for="public">
                     Public access
                     <span>Everyone with the link will see this project.</span>
                 </label>
-                </div>
-
-                <div class="option">
+                            </div>
+                        
+                            <div class="option">
                 <input type="radio" id="members" name="privacy">
                 <label for="members">
                     Private to project members
                     <span>Only members of this project would be able to access.</span>
                 </label>
-                </div>
-
-                <div class="option">
+                            </div>
+                        
+                            <div class="option">
                 <input type="radio" id="private" name="privacy">
                 <label for="private">
                     Private to you
                     <span>You are the only one able to access this project.</span>
                 </label>
-                </div>
-            </div>
+                            </div>
+                        </div>
+                    </div>
 
-            <div class="link_container">
+                    <div class="link_container">
                 <div class="link">
                     <i class="fa-solid fa-link"></i>
                     <h3>Copy Link</h3>
@@ -90,6 +93,18 @@
                         <i class="fa-solid fa-question"></i>
                     </div>
                     <h3>Learn more about sharing</h3>
+                </div>
+                
+                    </div>
+
+                </div>
+
+                <div class="button_container">
+                    <div class="buttons">
+                        <button class="cancel_button">Cancel</button>
+                        <button class="save_button">Save</button>
+                    </div>
+                    
                 </div>
                 
             </div>
