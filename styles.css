@@ -253,6 +253,7 @@ form{
 
 .option {
     display: flex;
+    gap: 0.8rem;
     cursor: pointer;
 }
 
@@ -261,12 +262,13 @@ form{
     background-color: hsl(215, 28%, 17%);
     border: 2px solid hsl(215, 14%, 34%);
     border-radius: 50%;
-    width: 18px;
-    height: 18px;
-    margin-right: 10px;
-    margin-top: 3px;
+    width: 1.2rem;
+    height: 1.2rem;
     cursor: pointer;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
 }
 
 .option input[type="radio"]:checked {
@@ -276,9 +278,6 @@ form{
 
 .option input[type="radio"]:checked::before {
     content: "";
-    position: absolute;
-    top: 4px;
-    left: 4px;
     width: 6px;
     height: 6px;
     background: hsl(0, 0%, 100%);
@@ -410,16 +409,33 @@ form{
 }
 
 @media (max-width: 768px) {
+
+    .main_container{
+        width: 100%;
+        padding: 0;
+    }
     .container{
         width: 100%;
-        grid-template-columns: 1fr 1.5fr;
+        border-radius: 0;
+        grid-template-columns: 1fr 3fr;
     }
+   
     .drawer{
-        border-left: none;
-        border-top: 0.5px solid hsl(0, 0%, 40%);
+        width: 100%;
     }
-    /* .button_container{
-        justify-content: center;
-        padding: 1rem;
-    } */
+  
+}
+
+@media (max-width: 480px) {
+
+    .container{
+        width: 100%;
+        border-radius: 0;
+        grid-template-columns: 1fr;
+    }
+    .main{
+        display: none;
+    }
+   
+  
 }
