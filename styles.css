@@ -408,3 +408,18 @@ form{
     background-color: hsl(246, 82%, 56%);
     color: hsl(0, 0%, 100%);
 }
+
+@media (max-width: 768px) {
+    .container{
+        width: 100%;
+        grid-template-columns: 1fr 1.5fr;
+    }
+    .drawer{
+        border-left: none;
+        border-top: 0.5px solid hsl(0, 0%, 40%);
+    }
+    /* .button_container{
+        justify-content: center;
+        padding: 1rem;
+    } */
+}
